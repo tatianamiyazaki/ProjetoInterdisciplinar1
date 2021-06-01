@@ -3,14 +3,15 @@
 
 /* Definição de variáveis */
 :root {
-    --cor-primaria: #3C1CA6;
-    --cor-secundaria: #a56a7d;
-    --cor-secundaria-clara: #55c2d8;
-    --cor-fundo-clara: #DDDDDD;
-    --cor-fundo-escura: #c6e7ee;
+    --cor-primaria:/* #3C1CA6; #88A2F2;*//* #CFE3E0;*/#4d6aec;
+    --cor-secundaria:#a56a7d;/* #BF6E3F;*//*#d4a081*/;
+    --cor-secundaria-clara: /*#55c2d8*//*#94B3F2*//* #DDF2EF;*//*#e6f8fc*/#c6e7ee;
+    --cor-fundo-clara: /*#DDDDDD;*/#eff4f7;
+    --cor-fundo-escura:/* #c6e7ee; */#E6F8FC;;
+    --cor-texto-principal: #3C1CA6;
     --cor-texto-claro: #FFFFFF;
     --cor-texto-escura: #444444;
-    --cor-main: #f5eaed;
+    --cor-main:/* #f5eaed;*/ #FFFFFF;
 }
 
 /* CSS reset */
@@ -39,7 +40,7 @@ html {                  /* Tamanho de fonte padrão do documento */
 
 /* Configuração de todos os links do site */
 a {
-    color: var(--cor-primaria);
+    color: var(--cor-texto-principal);
     text-decoration: none;  /* Sem sublinhado */
 }
 
@@ -53,6 +54,10 @@ header {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+}
+
+#logo{
+    max-width: 500px;
 }
 
 #social {
@@ -411,7 +416,11 @@ footer img {
     }
 
     .destaque > h1 > a, .individual h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    #logo{
+        max-width: 250px;
     }
 
 }
