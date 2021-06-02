@@ -232,7 +232,7 @@ article > h2 {
 }
 
 .foto-texto img {
-    width: 450px;
+    width: 850px;
     margin-right: 24px;
     border-radius: 4px;
     /* Largura máxima limitada à largura do pai */
@@ -417,6 +417,10 @@ footer img {
 
     .destaque > h1 > a, .individual h1{
         font-size: 1.6rem;
+    }
+
+    .destaque p{
+        font-size: 1.2rem;
     }
 
     #logo{
