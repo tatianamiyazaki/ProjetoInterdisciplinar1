@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Libras</title>
+<body>
+    <header><!-- Cabeçalho -->
+        <a href="./">
+            <img id="logo" src="img/logo.png" alt="Portal Visurdez">
+        </a>
+        <nav id="social">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/facebook-64x64.png" alt="Facebook">
+                        <span>/portal.visurdez</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/instagram-64x64.png" alt="Instagram">
+                        <span>/portal.visurdez</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/whatsapp-64x64.png" alt="WhatsApp">
+                        <span>(16) 55555-55555</span>
+                    </a>
+                </li>            
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="menu"> <!-- Menu -->
+        <div id="menu-contraido">
+            <input type="checkbox">
+            <span></span>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="#">Geral</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Libras</a></li>
+                <li><a href="#">Ensino</a></li>
+                <li><a href="#">Entretenimento</a></li>
+            </ul>
+        </div>        
+    </nav>
+
+    <div id="content"> <!-- Área de conteúdo -->
+        <main><!-- Divisão principal do site -->
+            
+            <article class="individual"> <!-- Representa um artigo ou notícia -->
+                <h2>Libras</h2>
+                <h1>Oscar é criticado por cortar atriz usando língua de sinais para apresentar vencedores</h1>
+                <div class="foto-texto">
+                    <img src="img/marlee-matlin.png" alt="Marlee Matlin" title="Foto: New York POst">
+                    <p>Estrela de ‘Filhos do Silêncio’, Marlee Matlin é a única atriz surda da história premiada com um Oscar.</p>
+                </div>
+                <p>Os responsáveis pelo Oscar 2021 estão sendo alvo de críticas enfáticas nas redes sociais após cortarem a imagem da atriz Marlee Matlin durante sua participação no evento. Hoje aos 55 anos e única pessoa surda vencedora de um Oscar, por seu trabalho em ‘Filhos do Silêncio’ (1986), ela fez sua participação no evento de ontem com linguagem dos sinais.</p>
+                <p>Matlin participou do Oscar 2021 anunciando os indicados e vencedores de duas categorias da premiação: melhor documentário e melhor documentário em curta-metragem. Em alguns trechos da participação da atriz, os diretores do espetáculo mostraram os indicados listados por ela, enquanto um narrador traduzia os sinais da atriz. Assista ao vídeo mostrando o corte da imagem de Marlee Matlin no fim do texto.</p>
+                <p>Uma pessoa escreveu no Twitter: “Mostrar os indicados enquanto ela está fazendo os sinais e deixar apenas o narrador… PÉSSIMA DECISÃO”. Outra escreveu: “Como pessoas com problemas auditivos podem se beneficiar assim?”.</p>
+                <p>“A Academia deveria ter simplesmente dividido a tela, mostrando os indicados ao lado da Matlin enquanto ela fazia os sinais”, sugeriu uma terceira espectadora. “Extremamente desrespeitoso”, criticou mais alguém. “Isso não foi nada esperto por parte do Oscar…”, expôs uma outra pessoa.</p>
+
+            </article>
+
+        </main>
+            
+        <aside>
+            <article>
+                <img src="img/modelo.png" alt="Foto da modelo" title="Foto: Fotógrafo renomado"> 
+                <h1><a href="noticia03.html">Nasci surda, mas rompi preconceito e me tornei modelo internacional; SAIBA MAIS</a></h1>                          
+            </article>
+
+            <article>
+                <img src="img/youtubers.png" alt="Foto youtubers" title="Foto: Youtube"> 
+                <h1><a href="noticia04.html">A geração de youtubers surdos que está ensinando Libras na internet; SAIBA MAIS</a></h1>                          
+            </article>
+
+            <article>
+                <img src="img/anuncie.png" alt="Espaço publicitário" title="Foto: Editores"> 
+            </article>
+        </aside>   
+    </div>
+
+    <footer> <!-- Rodapé -->
+        <img src="#" alt="Portal Visurdez">
+        <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Nossa missão</a></li>
+            <li><a href="#">Comercial</a></li>
+        </ul>
+
+        <address>
+            Rua das Oportunidades, 1000<br>
+            Portas Abertas/SP<br>
+            <a href="tel:+55165555555555">(16) 55555-55555</a><br>
+            <a href="mailto:contato@visurdez.com.br">contato@visurdez.com.br</a>
+        </address>
+    </footer>
+
+    <!--VLibras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
