@@ -211,6 +211,10 @@ article > h2 {
     text-transform: uppercase; /* Todas as letras em maiúsculas */
 }
 
+article li{
+    margin-left: 30px;
+}
+
 .destaque {
     background-color: var(--cor-secundaria-clara);
     padding: 24px;
