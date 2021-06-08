@@ -222,6 +222,7 @@ article li{
     border-radius: 4px;  /* Bordas LEVEMENTE arredondadas */
 }
 
+
 .destaque p {
     color: #000000;
     font-size: 1.5rem;
@@ -285,6 +286,16 @@ aside > article > img {
     max-width: 100%;
 }
 
+aside > article > a img{
+    display: block;
+    /* margin auto à esquerda e à direita centraliza o elemento quando este é
+       display: block */
+    margin: 0 auto;
+    border-radius: 4px; /* Borda arredondada */ 
+    /* Largura máxima é 100% da largura do pai */
+    max-width: 100%;
+}
+
 aside > article > h1 > a {
     font-size: 1rem;
     color: #000000;
@@ -325,6 +336,67 @@ footer img {
     height: 100%;
 }
 
+#quem{
+    width: 100%;
+    font-size: 2.0rem;
+    color: var(--cor-texto-principal);
+    text-align: center;
+    margin: 32px;
+}
+
+#quemsomos {
+    background-color: var(--cor-fundo-clara);    
+    /* Este elemento e seus filhos usarão flexbox */
+    display: flex;
+    flex-direction: row; /* Os filhos ficarão em linha, na horizontal */
+    width: 100%;
+    text-align: center;
+    padding: 32px;  
+}
+
+.destaque1 {
+    background-color: var(--cor-secundaria-clara);
+    margin: 24px;
+    border-radius: 4px;  /* Bordas LEVEMENTE arredondadas */
+    width: 50%;
+    padding: 24px;
+}
+
+.destaque1 img{
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.destaque-missao {
+    background-color: var(--cor-secundaria-clara);
+    margin: 24px;
+    border-radius: 4px;  /* Bordas LEVEMENTE arredondadas */
+    width: 100%;
+    padding: 24px;
+    font-weight: bold;
+}
+
+.destaque-comercial {
+    background-color: var(--cor-secundaria-clara);
+    margin: 24px;
+    border-radius: 4px;  /* Bordas LEVEMENTE arredondadas */
+    width: 100%;
+    padding: 24px;
+    font-weight: bold;
+}
+
+.destaque-comercial h2{
+    font-size: 1.5rem;
+    padding: 48px;
+    color: var(--cor-secundaria);    
+}
+
+.destaque-comercial address{
+    color: #000000;
+    padding-bottom: 40px;
+}
+
 /* Regras para larguras específicas de tela */
 @media screen and (max-width: 1020px) {  /* Breakpoint (ponto de quebra) */
     main {
@@ -339,6 +411,37 @@ footer img {
     .destaque img {
         margin-right: 0;
         margin-bottom: 24px;
+    }
+
+    .destaque1{        
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 80%;         
+    }
+
+    .destaque1 img{
+        padding: 6px;
+    }
+
+    .destaque-missao{        
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 80%;         
+    }
+
+    .destaque-comercial{        
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto; 
+        padding: 6px;
+        width: 80%;         
+    }
+
+    #quemsomos{
+        padding: 6px;
+        width: 100%;
     }
 }
 
@@ -399,12 +502,26 @@ footer img {
     footer > * {    /* Todos os filhos DIRETOS de footer */
         margin-bottom: 12px;
     }
+
     footer ul li:first-child {  /* Só o primeiro (first-child) li */
         padding-left: 0;
     }
+
     footer address {
         text-align: right;
     }
+
+    #quem{
+        margin: 12px;
+    }
+
+    #quemsomos{
+        text-align: center;
+        margin: 6px;
+        flex-direction: column;
+    }
+
+    
 }
 
 @media screen and (max-width: 640px) {
@@ -431,5 +548,6 @@ footer img {
     #logo{
         max-width: 250px;
     }
+  
 
 }
