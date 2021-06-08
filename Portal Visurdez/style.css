@@ -110,6 +110,7 @@ nav {
     color: #FFFFFF;
     transition: 300ms;
     background-color: var(--cor-secundaria);
+    font-weight: bold;
 }
 
 #menu a:hover {
@@ -199,7 +200,7 @@ article > h1 {    /* Só os h1 que são filhos diretos de article */
 }
 
 article > h1 > a {
-    font-size: 1.5rem;      /* 1.5x o tamanho da fonte do elemento raiz (html) */
+    font-size: 1.3rem;      /* 1.5x o tamanho da fonte do elemento raiz (html) */
 }
 
 article > p {
